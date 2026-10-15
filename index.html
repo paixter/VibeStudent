@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VibeStudent — Информационно-справочный каталог ИИ-инструментов</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container header-container">
+            <a href="#" class="logo">
+                 <img src="assets/images/logo.png" alt="VibeStudent">
+            </a>
+            <nav class="nav" id="nav-menu">
+                <a href="#filters" class="nav-link">Фильтры</a>
+                <a href="#catalog" class="nav-link">ИИ-инструменты</a>
+                <a href="#about" class="nav-link">О проекте</a>
+            </nav>
+            <div class="header-right">
+                <div class="search-box">
+                    <input type="text" id="search-input" placeholder="Быстрый поиск ИИ...">
+                </div>
+                <button class="btn-login" id="login-btn">Войти</button>
+                <button class="burger-btn" id="burger-btn" aria-label="Меню">
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <!-- Герой-секция -->
+        <section class="hero-section">
+            <div class="container">
+                <h1>Найди идеальный ИИ-инструмент<br><span class="hero-subtitle">для своей учебной задачи</span></h1>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-number">50+ ИИ</div>
+                        <div class="stat-label">В каталоге</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">100%</div>
+                        <div class="stat-label">Релевантно учебе</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">4.9 / 5</div>
+                        <div class="stat-label">Экспертный рейтинг</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Фильтрация -->
+        <section class="filters-section" id="filters">
+            <div class="container">
+                <h2>Фильтрация по специфике задачи</h2>
+                <div class="filters-list" id="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">Все сервисы</button>
+                    <button class="filter-btn" data-filter="articles">Написание статей</button>
+                    <button class="filter-btn" data-filter="presentations">Презентации</button>
+                    <button class="filter-btn" data-filter="coding">Кодинг</button>
+                    <button class="filter-btn" data-filter="translation">Перевод</button>
+                    <button class="filter-btn" data-filter="tasks">Решение задач</button>
+                    <button class="filter-btn" data-filter="images">Изображения</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Каталог ИИ-инструментов -->
+        <section class="catalog-section" id="catalog">
+            <div class="container">
+                <div class="catalog-header">
+                    <h2>Каталог ИИ-инструментов</h2>
+                    <p>Подбор и ранжирование на основе экспертного и пользовательского рейтинга</p>
+                </div>
+                <div class="cards-grid" id="cards-grid">
+                    <!-- Карточка 1: DeepSeek -->
+                    <article class="ai-card" data-category="articles coding">
+                        <div class="card-top">
+                            <div class="card-icon-title">
+                                <img src="assets/images/DeepSeek.png" alt="">
+                                <h3 class="card-title">DeepSeek</h3>
+								<p class="card-category-label">Написание статей, Кодинг</p>
+                            </div>
+                            <div class="card-rating">★ 4.9</div>
+                        </div>
+                        <p class="card-desc">Продвинутая модель для математики, физического моделирования и написания кода.</p>
+                        <a href="#" class="btn-card" data-tool="DeepSeek">Перейти к ИИ ↗</a>
+                    </article>
+
+                    <!-- Карточка 2: Gamma App -->
+                    <article class="ai-card" data-category="presentations">
+                        <div class="card-top">
+                            <div class="card-icon-title">
+                                <img src="assets/images/GammaApp.png" alt="">
+                                <h3 class="card-title">Gamma App</h3>
+								<p class="card-category-label">Презентации</p>
+                            </div>
+                            <div class="card-rating">★ 4.7</div>
+                        </div>
+                        <p class="card-desc">Быстрое создание презентаций и докладов по текстовому описанию со стильным дизайном.</p>
+                        <a href="#" class="btn-card" data-tool="Gamma App">Перейти к ИИ ↗</a>
+                    </article>
+
+                    <!-- Карточка 3: Claude -->
+                    <article class="ai-card" data-category="articles tasks">
+                        <div class="card-top">
+                            <div class="card-icon-title">
+                                <img src="assets/images/Claude.png" alt="">
+                                <h3 class="card-title">Claude</h3>
+								<p class="card-category-label">Написание статей, Решение задач</p>
+                            </div>
+                            <div class="card-rating">★ 4.9</div>
+                        </div>
+                        <p class="card-desc">Анализирует длинные научные статьи, книги и пишет глубокие академические тексты.</p>
+                        <a href="#" class="btn-card" data-tool="Claude">Перейти к ИИ ↗</a>
+                    </article>
+
+                    <!-- Карточка 4: ChatGPT -->
+                    <article class="ai-card" data-category="tasks">
+                        <div class="card-top">
+                            <div class="card-icon-title">
+                                <img src="assets/images/ChatGPT.png" alt="">
+                                <h3 class="card-title">ChatGPT</h3>
+								<p class="card-category-label">Решение задач</p>
+                            </div>
+                            <div class="card-rating">★ 4.9</div>
+                        </div>
+                        <p class="card-desc">Универсальный помощник для написания эссе, рефератов и генерации идей.</p>
+                        <a href="#" class="btn-card" data-tool="ChatGPT">Перейти к ИИ ↗</a>
+                    </article>
+
+                    <!-- Карточка 5: Gemini -->
+                    <article class="ai-card" data-category="tasks">
+                        <div class="card-top">
+                            <div class="card-icon-title">
+                                <img src="assets/images/Gemini.png" alt="">
+                                <h3 class="card-title">Gemini</h3>
+								<p class="card-category-label">Решение задач</p>
+                            </div>
+                            <div class="card-rating">★ 5.0</div>
+                        </div>
+                        <p class="card-desc">Помогает писать тексты, планировать задачи, генерировать идеи и искать ответы на сложные вопросы.</p>
+                        <a href="#" class="btn-card" data-tool="Gemini">Перейти к ИИ ↗</a>
+                    </article>
+
+                    <!-- Карточка 6: Алиса AI -->
+                    <article class="ai-card" data-category="articles images">
+                        <div class="card-top">
+                            <div class="card-icon-title">
+                                <img src="assets/images/AlisaAI.png" alt="">
+                                <h3 class="card-title">Алиса AI</h3>
+								<p class="card-category-label">Написание статей</p>
+                            </div>
+                            <div class="card-rating">★ 4.8</div>
+                        </div>
+                        <p class="card-desc">Пишет и редактирует тексты любой сложности. Создает квадратные изображения.</p>
+                        <a href="#" class="btn-card" data-tool="Алиса AI">Перейти к ИИ ↗</a>
+                    </article>
+
+                    <!-- Карточка 7: DeepL -->
+                    <article class="ai-card" data-category="translation">
+                        <div class="card-top">
+                            <div class="card-icon-title">
+                                <img src="assets/images/DeepL.png" alt="">
+                                <h3 class="card-title">DeepL</h3>
+								<p class="card-category-label">Перевод</p>
+                            </div>
+                            <div class="card-rating">★ 4.9</div>
+                        </div>
+                        <p class="card-desc">Сервис признан одним из самых точных переводчиков в мире, часто превосходящим Google.</p>
+                        <a href="#" class="btn-card" data-tool="DeepL">Перейти к ИИ ↗</a>
+                    </article>
+
+                    <!-- Карточка 8: Gigachat -->
+                    <article class="ai-card" data-category="articles images">
+                        <div class="card-top">
+                            <div class="card-icon-title">
+                                <img src="assets/images/Gigachat.png" alt="">
+                                <h3 class="card-title">Gigachat</h3>
+								<p class="card-category-label">Написание статей, Изображения</p>
+                            </div>
+                            <div class="card-rating">★ 4.5</div>
+                        </div>
+                        <p class="card-desc">Создание статей, постов для соцсетей, деловых писем, рефератов и суммаризация текста.</p>
+                        <a href="#" class="btn-card" data-tool="Gigachat">Перейти к ИИ ↗</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- О проекте -->
+        <section class="about-section" id="about">
+			<div class="container">
+				<div class="about-card">
+					<div class="about-info">
+						<h2>Информация о проекте VibeStudent</h2>
+						<p><strong>Проблема:</strong> Студенты сталкиваются с инфошумом и неэффективными ИИ-сервисами.</p>
+						<p><strong>Целевая аудитория:</strong> Обучающиеся ВУЗов и ССУЗов (17–22 лет).</p>
+						<p><strong>Главная функция:</strong> Подбор и категоризация ИИ-инструментов под студенческие задачи.</p>
+					</div>
+					<div class="about-meta">
+						<p class="meta-org">СПбГУПТД • ИИТА • Кафедра ЦАТ</p>
+						<p class="meta-proj">Проект по дисциплине «Цифровые медиа»</p>
+						<p class="meta-authors">Выполнили: Кнер Р., Корчагин П.А.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-left">
+                <p class="footer-brand">VibeStudent</p>
+                <p class="footer-desc">Информационно-справочный каталог сервисов на базе ИИ</p>
+            </div>
+            <div class="footer-right">
+                <p>© 2026 VibeStudent</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js" defer></script>
+</body>
+</html>
