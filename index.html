@@ -3,20 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VibeStudent — Информационно-справочный каталог ИИ-инструментов</title>
+    <title>VibeStudent</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header class="header">
         <div class="container header-container">
-            <a href="#" class="logo">
-                 <img src="assets/images/logo.png" alt="VibeStudent">
-            </a>
-            <nav class="nav" id="nav-menu">
-                <a href="#filters" class="nav-link">Фильтры</a>
-                <a href="#catalog" class="nav-link">ИИ-инструменты</a>
-                <a href="#about" class="nav-link">О проекте</a>
-            </nav>
+			<div class="header-left">
+				<a href="#" class="logo">
+					 <img src="assets/images/logo.png" alt="VibeStudent">
+				</a>
+				<nav class="nav" id="nav-menu">
+					<a href="#filters" class="nav-link">Фильтры</a>
+					<a href="#catalog" class="nav-link">ИИ-инструменты</a>
+					<a href="#about" class="nav-link">О проекте</a>
+				</nav>
+			</div>
             <div class="header-right">
                 <div class="search-box">
                     <input type="text" id="search-input" placeholder="Быстрый поиск ИИ...">
@@ -78,9 +80,11 @@
                     <article class="ai-card" data-category="articles coding">
                         <div class="card-top">
                             <div class="card-icon-title">
-                                <img src="assets/images/DeepSeek.png" alt="">
-                                <h3 class="card-title">DeepSeek</h3>
-								<p class="card-category-label">Написание статей, Кодинг</p>
+                                <img src="assets/images/DeepSeek.png" alt="" class="card-icon">
+								<div class="card-title-lable">
+									<h3 class="card-title">DeepSeek</h3>
+									<p class="card-category-label">Написание статей, Кодинг</p>
+								</div>
                             </div>
                             <div class="card-rating">★ 4.9</div>
                         </div>
@@ -92,9 +96,11 @@
                     <article class="ai-card" data-category="presentations">
                         <div class="card-top">
                             <div class="card-icon-title">
-                                <img src="assets/images/GammaApp.png" alt="">
-                                <h3 class="card-title">Gamma App</h3>
-								<p class="card-category-label">Презентации</p>
+                                <img src="assets/images/GammaApp.png" alt="" class="card-icon">
+								<div class="card-title-lable">
+									<h3 class="card-title">Gamma App</h3>
+									<p class="card-category-label">Презентации</p>
+								</div>
                             </div>
                             <div class="card-rating">★ 4.7</div>
                         </div>
@@ -106,9 +112,11 @@
                     <article class="ai-card" data-category="articles tasks">
                         <div class="card-top">
                             <div class="card-icon-title">
-                                <img src="assets/images/Claude.png" alt="">
-                                <h3 class="card-title">Claude</h3>
-								<p class="card-category-label">Написание статей, Решение задач</p>
+                                <img src="assets/images/Claude.png" alt="" class="card-icon">
+								<div class="card-title-lable">
+									<h3 class="card-title">Claude</h3>
+									<p class="card-category-label">Написание статей, Решение задач</p>
+								</div>
                             </div>
                             <div class="card-rating">★ 4.9</div>
                         </div>
@@ -120,9 +128,11 @@
                     <article class="ai-card" data-category="tasks">
                         <div class="card-top">
                             <div class="card-icon-title">
-                                <img src="assets/images/ChatGPT.png" alt="">
-                                <h3 class="card-title">ChatGPT</h3>
-								<p class="card-category-label">Решение задач</p>
+                                <img src="assets/images/ChatGPT.png" alt="" class="card-icon">
+								<div class="ccard-title-lable">
+									<h3 class="card-title">ChatGPT</h3>
+									<p class="card-category-label">Решение задач</p>
+								</div>
                             </div>
                             <div class="card-rating">★ 4.9</div>
                         </div>
@@ -134,9 +144,11 @@
                     <article class="ai-card" data-category="tasks">
                         <div class="card-top">
                             <div class="card-icon-title">
-                                <img src="assets/images/Gemini.png" alt="">
-                                <h3 class="card-title">Gemini</h3>
-								<p class="card-category-label">Решение задач</p>
+                                <img src="assets/images/Gemini.png" alt="" class="card-icon">
+								<div class="card-title-lable">
+									<h3 class="card-title">Gemini</h3>
+									<p class="card-category-label">Решение задач</p>
+								</div>
                             </div>
                             <div class="card-rating">★ 5.0</div>
                         </div>
@@ -148,9 +160,11 @@
                     <article class="ai-card" data-category="articles images">
                         <div class="card-top">
                             <div class="card-icon-title">
-                                <img src="assets/images/AlisaAI.png" alt="">
-                                <h3 class="card-title">Алиса AI</h3>
-								<p class="card-category-label">Написание статей</p>
+                                <img src="assets/images/AlisaAI.png" alt="" class="card-icon">
+								<div class="card-title-lable">
+									<h3 class="card-title">Алиса AI</h3>
+									<p class="card-category-label">Написание статей</p>
+								</div>
                             </div>
                             <div class="card-rating">★ 4.8</div>
                         </div>
@@ -162,9 +176,11 @@
                     <article class="ai-card" data-category="translation">
                         <div class="card-top">
                             <div class="card-icon-title">
-                                <img src="assets/images/DeepL.png" alt="">
-                                <h3 class="card-title">DeepL</h3>
-								<p class="card-category-label">Перевод</p>
+                                <img src="assets/images/DeepL.png" alt="" class="card-icon">
+								<div class="card-title-lable">
+									<h3 class="card-title">DeepL</h3>
+									<p class="card-category-label">Перевод</p>
+								</div>
                             </div>
                             <div class="card-rating">★ 4.9</div>
                         </div>
@@ -176,9 +192,11 @@
                     <article class="ai-card" data-category="articles images">
                         <div class="card-top">
                             <div class="card-icon-title">
-                                <img src="assets/images/Gigachat.png" alt="">
-                                <h3 class="card-title">Gigachat</h3>
-								<p class="card-category-label">Написание статей, Изображения</p>
+                                <img src="assets/images/Gigachat.png" alt="" class="card-icon">
+								<div class="card-title-lable">
+									<h3 class="card-title">Gigachat</h3>
+									<p class="card-category-label">Написание статей, Изображения</p>
+								</div>
                             </div>
                             <div class="card-rating">★ 4.5</div>
                         </div>
@@ -194,7 +212,7 @@
 			<div class="container">
 				<div class="about-card">
 					<div class="about-info">
-						<h2>Информация о проекте VibeStudent</h2>
+						<h3>Информация о проекте VibeStudent</h3>
 						<p><strong>Проблема:</strong> Студенты сталкиваются с инфошумом и неэффективными ИИ-сервисами.</p>
 						<p><strong>Целевая аудитория:</strong> Обучающиеся ВУЗов и ССУЗов (17–22 лет).</p>
 						<p><strong>Главная функция:</strong> Подбор и категоризация ИИ-инструментов под студенческие задачи.</p>

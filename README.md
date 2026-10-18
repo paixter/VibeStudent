@@ -14,4 +14,4 @@ https://www.figma.com/design/EgHStvUCKPeow8tQ2LPLxy/Untitled?node-id=0-1&t=Ta3rp
 Фильтрация, выставление оценки, поиск.
 
 Дата последнего обновления:
-15.10.26
+18.10.26
